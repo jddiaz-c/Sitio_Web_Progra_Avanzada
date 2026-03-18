@@ -4,21 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/blog.css">
     <title>Blog</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-        <div class="nav-logo">La Galería de Pipe</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+            <div class="nav-logo">La Galería de Pipe</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-    </header>   
+    </header>
+ 
+    <main>
+ 
+        <!-- HERO BLOG -->
+        <section class="blog-hero">
+            <div class="blog-hero-inner">
+                <span class="blog-hero-etiqueta">Blog</span>
+                <h1 class="blog-hero-titulo">Servicios fotográficos<br>para cada momento</h1>
+                <p class="blog-hero-subtitulo">Cada celebración merece ser recordada con imágenes que cuenten su historia.</p>
+            </div>
+        </section>
+ 
+        <!-- ARTÍCULOS -->
+        <section class="blog-articulos">
+            <span class="section-title">Eventos</span>
+ 
+            <div class="blog-grid">
+ 
+                <!-- Matrimonios -->
+                <article class="blog-card">
+                    <div class="blog-card-img" style="background-image: url('./resources/boda.avif');">
+                        <span class="blog-card-tag">Matrimonios</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-fecha">Fotografía de bodas</span>
+                        <h2 class="blog-card-titulo">Capturando el día más especial</h2>
+                        <p class="blog-card-texto">
+                            Una boda es uno de los momentos más significativos en la vida de una pareja. 
+                            Más allá de retratos formales, me enfoco en capturar las emociones reales: 
+                            la mirada cómplice, la risa nerviosa antes del sí, el abrazo que lo dice todo. 
+                            Cobertura completa desde la preparación hasta el baile de cierre, con entrega 
+                            de galería digital en alta resolución y álbum impreso opcional.
+                        </p>
+                        <div class="blog-card-tags">
+                            <span>Ceremonia</span>
+                            <span>Recepción</span>
+                            <span>Pareja</span>
+                            <span>Galería digital</span>
+                        </div>
+                    </div>
+                </article>
+ 
+                <!-- 15 años -->
+                <article class="blog-card">
+                    <div class="blog-card-img" style="background-image: url('./resources/15_anos.jpg');">
+                        <span class="blog-card-tag">15 Años</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-fecha">Fotografía de quinceañera</span>
+                        <h2 class="blog-card-titulo">Una celebración única e irrepetible</h2>
+                        <p class="blog-card-texto">
+                            Los 15 años marcan un momento de transición lleno de elegancia, color y alegría. 
+                            Sesiones previas al evento para retratos íntimos con el vestido y la familia, 
+                            más cobertura completa del día: vals, brindis y celebración. 
+                            El resultado es una colección de imágenes que la acompañarán toda la vida.
+                        </p>
+                        <div class="blog-card-tags">
+                            <span>Sesión previa</span>
+                            <span>Vals</span>
+                            <span>Familia</span>
+                            <span>Retratos</span>
+                        </div>
+                    </div>
+                </article>
+ 
+                <!-- Bautizos -->
+                <article class="blog-card">
+                    <div class="blog-card-img" style="background-image: url('./resources/BAUTIZOS-FOTOGRAFIA-CROMA-54.jpg');">
+                        <span class="blog-card-tag">Bautizos</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-fecha">Fotografía de bautismo</span>
+                        <h2 class="blog-card-titulo">El primer gran momento de vida</h2>
+                        <p class="blog-card-texto">
+                            El bautizo es la primera gran celebración familiar. Fotografío con discreción 
+                            durante la ceremonia religiosa y con toda la energía en la celebración posterior. 
+                            Imágenes delicadas del bebé, retratos familiares y momentos espontáneos 
+                            que se convierten en recuerdos para generaciones.
+                        </p>
+                        <div class="blog-card-tags">
+                            <span>Ceremonia</span>
+                            <span>Bebé</span>
+                            <span>Familia</span>
+                            <span>Celebración</span>
+                        </div>
+                    </div>
+                </article>
+ 
+                <!-- Grados -->
+                <article class="blog-card">
+                    <div class="blog-card-img" style="background-image: url('./resources/graduacion.avif');">
+                        <span class="blog-card-tag">Grados</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-fecha">Fotografía de graduación</span>
+                        <h2 class="blog-card-titulo">El esfuerzo de años en una imagen</h2>
+                        <p class="blog-card-texto">
+                            Graduarse es el resultado de años de dedicación. Capturo ese orgullo 
+                            en retratos individuales, grupales y con la familia. Disponible para 
+                            ceremonias de bachillerato, pregrado y posgrado. Sesiones previas 
+                            con toga y birrete para retratos más elaborados también disponibles.
+                        </p>
+                        <div class="blog-card-tags">
+                            <span>Ceremonia</span>
+                            <span>Toga y birrete</span>
+                            <span>Familia</span>
+                            <span>Sesión previa</span>
+                        </div>
+                    </div>
+                </article>
+ 
+                <!-- Eventos familiares / Aniversario -->
+                <article class="blog-card">
+                    <div class="blog-card-img" style="background-image: url('./resources/aniversario.avif');">
+                        <span class="blog-card-tag">Eventos Familiares</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-fecha">Aniversarios y celebraciones</span>
+                        <h2 class="blog-card-titulo">Cada año merece su historia</h2>
+                        <p class="blog-card-texto">
+                            Desde una reunión íntima hasta una gran fiesta, fotografío cumpleaños 
+                            y aniversarios de todas las edades. Especial atención a los detalles 
+                            de decoración, la interacción entre invitados y los momentos claves 
+                            como el brindis y el pastel. Cobertura por horas según tus necesidades.
+                        </p>
+                        <div class="blog-card-tags">
+                            <span>Aniversario</span>
+                            <span>Fiesta</span>
+                            <span>Detalles</span>
+                            <span>Por horas</span>
+                        </div>
+                    </div>
+                </article>
+ 
+                <!-- Sesiones familiares / 60 años de casados -->
+                <article class="blog-card">
+                    <div class="blog-card-img" style="background-image: url('./resources/60_anos_de_casados.jpg');">
+                        <span class="blog-card-tag">Sesiones Familiares</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-fecha">Sesiones familiares</span>
+                        <h2 class="blog-card-titulo">Momentos que el tiempo no borra</h2>
+                        <p class="blog-card-texto">
+                            Las reuniones familiares son tesoros que se vuelven más valiosos 
+                            con el tiempo. Sesiones en exteriores o en el hogar, con luz natural 
+                            y un ambiente relajado que permite capturar a cada persona tal como es. 
+                            Ideal para fin de año, vacaciones o simplemente porque la familia se merece 
+                            un recuerdo bonito.
+                        </p>
+                        <div class="blog-card-tags">
+                            <span>Exterior</span>
+                            <span>Hogar</span>
+                            <span>Luz natural</span>
+                            <span>Retratos grupales</span>
+                        </div>
+                    </div>
+                </article>
+ 
+            </div>
+        </section>
+ 
+        <!-- SECCIÓN DE PRECIOS -->
+        <section class="servicios-lista">
+            <span class="section-title">Lo que ofrezco</span>
+            <div class="servicios-grid">
+ 
+                <div class="servicio-card">
+                    <span class="servicio-numero">01</span>
+                    <h3 class="servicio-nombre">Fotografía de Retrato</h3>
+                    <p class="servicio-desc">
+                        Sesiones individuales o grupales con enfoque en la expresión y la luz natural. 
+                        Interiores o exteriores según tu preferencia.
+                    </p>
+                    <span class="servicio-precio">Desde $150.000 COP</span>
+                </div>
+ 
+                <div class="servicio-card">
+                    <span class="servicio-numero">02</span>
+                    <h3 class="servicio-nombre">Eventos y Celebraciones</h3>
+                    <p class="servicio-desc">
+                        Cobertura de cumpleaños, grados, reuniones familiares y eventos sociales. 
+                        Entrega de galería digital en alta resolución.
+                    </p>
+                    <span class="servicio-precio">Desde $300.000 COP</span>
+                </div>
+ 
+                <div class="servicio-card">
+                    <span class="servicio-numero">03</span>
+                    <h3 class="servicio-nombre">Fotografía Urbana</h3>
+                    <p class="servicio-desc">
+                        Recorridos por la ciudad capturando arquitectura, cultura y vida cotidiana 
+                        con una mirada documental y artística.
+                    </p>
+                    <span class="servicio-precio">Desde $200.000 COP</span>
+                </div>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
 </body>
 </html>

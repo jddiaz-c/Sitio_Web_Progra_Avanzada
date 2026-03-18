@@ -1,3 +1,4 @@
+
 /* =============================================
    SECCIONES DE EQUIPO — fondo bosque desenfocado
    ============================================= */
@@ -47,7 +48,7 @@
     font-weight: 300;
 }
  
-/* Trípode: fondo bosque un poco más oscuro para distinguir secciones */
+/* Secciones alternas: overlay un poco más oscuro */
 .equipo-alt::after {
     background: rgba(8, 12, 20, 0.78);
 }
@@ -203,9 +204,7 @@
     letter-spacing: 0.2px;
 }
  
-/* =============================================
-   SECCIÓN PRECIOS — fondo gris oscuro
-   ============================================= */
+
  
 .servicios-lista {
     padding: 100px 48px;
