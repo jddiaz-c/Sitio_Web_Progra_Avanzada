@@ -121,6 +121,13 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.section-title {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
 
 .filosofia .section-title {
     display: block;

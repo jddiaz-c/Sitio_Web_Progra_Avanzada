@@ -1,7 +1,7 @@
 /*
-   HERO*/
+   HERO BLOG*/
  
-.hero {
+.blog-hero {
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -10,18 +10,18 @@
     overflow: hidden;
 }
  
-.hero::before {
+.blog-hero::before {
     content: '';
     position: absolute;
     inset: -30px;
-    background-image: url('../resources/arroyo.jpg');
+    background-image: url('../resources/bosque.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(4px);
     z-index: 0;
 }
  
-.hero::after {
+.blog-hero::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -29,7 +29,7 @@
     z-index: 1;
 }
  
-.hero-inner {
+.blog-hero-inner {
     position: relative;
     z-index: 2;
     text-align: center;
@@ -39,7 +39,7 @@
     gap: 16px;
 }
  
-.hero-etiqueta {
+.blog-hero-etiqueta {
     color: rgba(255, 255, 255, 0.45);
     font-size: 0.72rem;
     font-weight: 600;
@@ -47,60 +47,32 @@
     text-transform: uppercase;
 }
  
-.hero-titulo {
+.blog-hero-titulo {
     color: white;
     font-size: 3.8rem;
     font-weight: 700;
     letter-spacing: -1px;
     line-height: 1.1;
 }
-.hero-subtitulo {
+ 
+.blog-hero-subtitulo {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 300;
     font-style: italic;
 }
  
- 
 /* =============================================
-   SECCIONES DE EQUIPO — fondo bosque desenfocado
+   SECCIÓN ARTÍCULOS
    ============================================= */
  
-.equipo {
+.blog-articulos {
     padding: 100px 48px;
+    background: #080c14;
     position: relative;
-    overflow: hidden;
 }
  
-/* Imagen de fondo desenfocada */
-.equipo::before {
-    content: '';
-    position: absolute;
-    inset: -30px;
-    background-image: url('../resources/bosque.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(6px);
-    z-index: 0;
-}
- 
-/* Overlay oscuro encima del fondo para legibilidad */
-.equipo::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(8, 12, 20, 0.70);
-    z-index: 1;
-}
- 
-/* Todo el contenido por encima del overlay */
-.equipo .section-title,
-.equipo .equipo-inner {
-    position: relative;
-    z-index: 2;
-}
- 
-.equipo .section-title {
+.blog-articulos .section-title {
     position: absolute;
     top: 40px;
     left: 48px;
@@ -111,163 +83,137 @@
     font-weight: 300;
 }
  
-/* Secciones alternas: overlay un poco más oscuro */
-.equipo-alt::after {
-    background: rgba(8, 12, 20, 0.78);
-}
- 
-/* =============================================
-   LAYOUT INTERIOR
-   ============================================= */
- 
-.equipo-inner {
-    max-width: 1100px;
-    margin: 60px auto 0;
+.blog-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 80px;
-    align-items: center;
-}
- 
-.equipo-inner-reverse {
-    grid-template-columns: 0.9fr 1.1fr;
-}
- 
-/* =============================================
-   FOTO CON HOVER ZOOM
-   ============================================= */
- 
-.equipo-foto-wrap {
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-    background: #0f1624;
-    cursor: pointer;
-}
- 
-.equipo-foto-wrap img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    opacity: 0.82;
-    display: block;
-    transition: opacity 0.5s ease, transform 0.6s ease;
-}
- 
-.equipo-foto-wrap:hover img {
-    opacity: 1;
-    transform: scale(1.05);
-}
- 
-.equipo-foto-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(8, 12, 20, 0.6) 0%,
-        transparent 50%
-    );
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
- 
-.equipo-foto-wrap:hover .equipo-foto-overlay {
-    opacity: 0.3;
-}
- 
-.equipo-foto-badge {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    pointer-events: none;
-}
- 
-/* =============================================
-   INFO Y ESPECIFICACIONES
-   ============================================= */
- 
-.equipo-info {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
- 
-.equipo-nombre {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
- 
-.equipo-marca {
-    color: rgba(255, 255, 255, 0.35);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
- 
-.equipo-modelo {
-    color: white;
-    font-size: 2.6rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 1;
-}
- 
-.equipo-linea {
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.08);
-}
- 
-.equipo-descripcion {
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.8;
-    letter-spacing: 0.3px;
-}
- 
-.equipo-specs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
  
-.spec-item {
-    padding: 16px 20px;
-    background: rgba(255, 255, 255, 0.04);
+/* =============================================
+   TARJETA DE ARTÍCULO
+   ============================================= */
+ 
+.blog-card {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
     transition: background 0.3s ease;
 }
  
-.spec-item:hover {
-    background: rgba(255, 255, 255, 0.08);
+.blog-card:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
  
-.spec-label {
-    color: rgba(255, 255, 255, 0.3);
+.blog-card-img {
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-color: #0f1624;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+ 
+.blog-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(8, 12, 20, 0.1) 0%,
+        rgba(8, 12, 20, 0.55) 100%
+    );
+    transition: opacity 0.4s ease;
+}
+ 
+.blog-card:hover .blog-card-img {
+    transform: scale(1.04);
+}
+ 
+.blog-card:hover .blog-card-img::after {
+    opacity: 0.6;
+}
+ 
+.blog-card-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    background: rgba(8, 12, 20, 0.65);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 0.65rem;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+}
+ 
+.blog-card-body {
+    padding: 28px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+ 
+.blog-card-fecha {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
 }
  
-.spec-valor {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.88rem;
-    font-weight: 400;
+.blog-card-titulo {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
     letter-spacing: 0.2px;
 }
  
-
+.blog-card-texto {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.8;
+    flex: 1;
+}
+ 
+.blog-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+ 
+.blog-card-tags span {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 2px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+ 
+.blog-card:hover .blog-card-tags span {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.55);
+}
+ 
+/* =============================================
+   SECCIÓN PRECIOS
+   ============================================= */
  
 .servicios-lista {
     padding: 100px 48px;

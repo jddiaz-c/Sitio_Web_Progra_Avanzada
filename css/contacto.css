@@ -113,12 +113,49 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+/* SOCIAL ICONS ELEGANTE */
+
+.social-icons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a i {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.social-icons a:hover i {
+    color: white;
+}
 
 /* DERECHA */
 
 .contact-form {
     flex: 1;
-    background-color: #3d69af;
+    background: linear-gradient(
+        to top,
+        rgba(22, 25, 32, 0.685) 0%,
+        rgba(6, 14, 29, 0.788) 100%
+    );
     padding: 40px;
     border-radius: 20px;
 }
@@ -134,7 +171,12 @@ input, textarea {
     padding: 15px;
     border-radius: 10px;
     border: none;
-    background-color: #334155;
+    background-color: #0e1827;
+    background: linear-gradient(
+        to right,
+        #0d1825 0%,
+        #1e26326c 100%
+    );
     color: white;
     font-size: 14px;
 }
@@ -150,8 +192,12 @@ textarea::placeholder {
     color: #94a3b8;
 }
 
-button {
-    background-color: #2563eb;
+button {    
+    background: linear-gradient(
+        to right,
+        #182535 0%,
+        #242c376c 100%
+    );
     border: none;
     padding: 15px 30px;
     color: white;
@@ -162,7 +208,7 @@ button {
 }
 
 button:hover {
-    background-color: #1d4ed8;
+    background-color: #2b344e;
 }
 
 /* RESPONSIVE */
