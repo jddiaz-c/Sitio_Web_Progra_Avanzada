@@ -104,6 +104,7 @@
     background: rgba(255, 255, 255, 0.02);
     overflow: hidden;
     transition: background 0.3s ease;
+    
 }
  
 .blog-card:hover {
@@ -289,3 +290,9 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding-top: 16px;
 }
+.blog-card-img--matrimonios  { background-image: url('../resources/boda.avif'); }
+.blog-card-img--quince       { background-image: url('../resources/15 anos.jpg'); }
+.blog-card-img--bautizos     { background-image: url('../resources/BAUTIZOS-FOTOGRAFIA-CROMA-54.jpg'); }
+.blog-card-img--grados       { background-image: url('../resources/graduacion.avif'); }
+.blog-card-img--aniversario  { background-image: url('../resources/aniversario.avif'); }
+.blog-card-img--familiar     { background-image: url('../resources/60 anos de casados.jpg'); }
