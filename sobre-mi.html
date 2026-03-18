@@ -3,22 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Sobre mí</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/sobre-mi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Sobre mí - La Galería de Pipe</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-        <div class="nav-logo">La Galería de Pipe</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html" class="active">Sobre mí</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="blog.html" >Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+            <div class="nav-logo">La Galería de Pipe</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html" class="active">Sobre mí</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-    </header>  
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-sobre">
+        <div class="hero-sobre-content">
+            <span class="hero-etiqueta">Juan Felipe Garzón</span>
+            <h1 class="hero-titulo">Contando historias a través de la lente</h1>
+        </div>
+    </section>
+
+    <!-- Intro con foto -->
+    <section class="intro">
+        <div class="intro-grid">
+            <div class="intro-foto">
+                <img src="./resources/ciudad.jpg" alt="Juan Felipe Garzón">
+            </div>
+            <div class="intro-texto">
+                <h2>Hola, soy Pipe</h2>
+                <p>Soy fotógrafo colombiano con sede en Tunja, Boyacá. Mi trabajo nace de una fascinación por capturar lo auténtico — esos momentos que revelan la esencia de las personas y los lugares.</p>
+                <p>Desde que tomé mi primera cámara hace más de 8 años, supe que había encontrado mi forma de conectar con el mundo. Cada sesión es una oportunidad para contar una historia única, para detener el tiempo y preservar lo que realmente importa.</p>
+                <p>Mi enfoque va más allá de la técnica. Me interesa crear un ambiente donde las personas se sientan cómodas siendo ellas mismas, donde los momentos fluyan de manera natural y genuina.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mi filosofía -->
+    <section class="filosofia">
+        <div class="filosofia-content">
+            <span class="section-title">Mi filosofía</span>
+            <div class="filosofia-grid">
+                <div class="filosofia-item">
+                    <h3>Autenticidad</h3>
+                    <p>Creo en capturar momentos reales, no poses forzadas. Las mejores fotografías surgen cuando las personas olvidan la cámara y simplemente son.</p>
+                </div>
+                <div class="filosofia-item">
+                    <h3>Luz y emoción</h3>
+                    <p>La luz cuenta historias tanto como los sujetos. Trabajo con ella de manera intencional para crear atmósferas que amplifiquen la emoción del momento.</p>
+                </div>
+                <div class="filosofia-item">
+                    <h3>Conexión humana</h3>
+                    <p>Antes que fotógrafo, soy observador de personas. Me tomo el tiempo de conocer a quienes fotografío, porque la confianza se refleja en cada imagen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mi camino -->
+    <section class="camino">
+        <div class="camino-content">
+            <div class="camino-texto">
+                <span class="section-title">Mi camino</span>
+                <h2>De aficionado a profesional</h2>
+                <p>Comencé fotografiando las calles de Tunja con una cámara prestada, simplemente por curiosidad. Lo que empezó como un pasatiempo se convirtió en una pasión que transformó mi vida.</p>
+                <p>He tenido la fortuna de trabajar en bodas, eventos corporativos, sesiones familiares y proyectos documentales. Cada experiencia me ha enseñado algo nuevo sobre la fotografía y sobre las personas.</p>
+                <p>Hoy, combino técnica profesional con esa misma curiosidad que me llevó a tomar mi primera foto. Sigo aprendiendo, experimentando y buscando nuevas formas de contar historias visuales.</p>
+            </div>
+            <div class="camino-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-año">2016</span>
+                    <p>Primeras fotografías en las calles de Tunja</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-año">2018</span>
+                    <p>Primera boda profesional</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-año">2020</span>
+                    <p>Proyecto documental sobre la fe en Colombia</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-año">2023</span>
+                    <p>Más de 100 eventos capturados</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-año">2024</span>
+                    <p>Expandiendo fronteras, nuevos proyectos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA -->
+    <section class="cta-sobre">
+        <div class="cta-sobre-content">
+            <h2>¿Listo para crear algo juntos?</h2>
+            <p>Me encantaría conocer tu historia y ayudarte a capturarla.</p>
+            <a href="contacto.html" class="cta-btn">Conversemos</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">La Galería de Pipe</div>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2024 La Galería de Pipe</p>
+            <p class="footer-location">Tunja, Boyacá</p>
+        </div>
+    </footer>
 </body>
 </html>
