@@ -1,0 +1,118 @@
+/* CONTACTO  */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+.contact-section {
+    padding: 80px 10%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* IZQUIERDA */
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.contact-links {
+    margin-top: 30px;
+}
+
+.contact-links p {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons span {
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* DERECHA */
+
+.contact-form {
+    flex: 1;
+    background-color: #3d69af;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #334155;
+    color: white;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+button {
+    background-color: #2563eb;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
