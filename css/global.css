@@ -1,4 +1,13 @@
-.header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+     font-family: 'Inter', sans-serif;
+}
+header {
     position: fixed;
     top: 0;
     left: 0;

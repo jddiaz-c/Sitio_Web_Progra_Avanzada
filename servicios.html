@@ -3,22 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/servicios.css">
     <title>Servicios</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-        <div class="nav-logo">La Galería de Pipe</div>
-        <ul class="nav-links">
-            <li><a href="index.html" >Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="servicios.html" class="active">Servicios</a></li>
-            <li><a href="blog.html" >Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+            <div class="nav-logo">La Galería de Pipe</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-    </header>   
+    </header>
+ 
+    <main>
+ 
+        <!-- CÁMARA -->
+        <section class="equipo">
+            <span class="section-title">Equipo</span>
+            <div class="equipo-inner">
+                <div class="equipo-foto-wrap">
+                    <img src="./resources/sony%20a6100.jpg" alt="Sony A6100">
+                    <div class="equipo-foto-overlay"></div>
+                    <span class="equipo-foto-badge">Sony α6100</span>
+                </div>
+                <div class="equipo-info">
+                    <div class="equipo-nombre">
+                        <span class="equipo-marca">Sony</span>
+                        <h2 class="equipo-modelo">α6100</h2>
+                    </div>
+                    <div class="equipo-linea"></div>
+                    <p class="equipo-descripcion">
+                        Cámara mirrorless APS-C de alta velocidad con autoenfoque en tiempo real 
+                        asistido por IA. Ideal para retratos, eventos y fotografía de calle, 
+                        combinando portabilidad con calidad profesional.
+                    </p>
+                    <div class="equipo-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Sensor</span>
+                            <span class="spec-valor">APS-C 24.2 MP</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Autoenfoque</span>
+                            <span class="spec-valor">425 puntos de fase</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ráfaga</span>
+                            <span class="spec-valor">11 fps</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Video</span>
+                            <span class="spec-valor">4K / Full HD 120fps</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">ISO</span>
+                            <span class="spec-valor">100 – 51.200</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Montura</span>
+                            <span class="spec-valor">Sony E-Mount</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- TRÍPODE -->
+        <section class="equipo equipo-alt">
+            <span class="section-title">Accesorios</span>
+            <div class="equipo-inner equipo-inner-reverse">
+                <div class="equipo-info">
+                    <div class="equipo-nombre">
+                        <span class="equipo-marca">Powerwell</span>
+                        <h2 class="equipo-modelo">Trípode Pro</h2>
+                    </div>
+                    <div class="equipo-linea"></div>
+                    <p class="equipo-descripcion">
+                        Trípode de aluminio ligero con cabeza de bola de 3 ejes y ajuste de altura 
+                        preciso. Indispensable para larga exposición, fotografía nocturna y 
+                        composiciones perfectamente estables.
+                    </p>
+                    <div class="equipo-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Material</span>
+                            <span class="spec-valor">Aluminio ligero</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Altura máx.</span>
+                            <span class="spec-valor">~150 cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cabeza</span>
+                            <span class="spec-valor">Ball head 3 ejes</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Patas</span>
+                            <span class="spec-valor">3 secciones extensibles</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Montura</span>
+                            <span class="spec-valor">Tornillo 1/4"</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Uso ideal</span>
+                            <span class="spec-valor">Larga exposición / Estudio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipo-foto-wrap">
+                    <img src="./resources/Statyw_fotograficzny.jpg" alt="Trípode Powerwell">
+                    <div class="equipo-foto-overlay"></div>
+                    <span class="equipo-foto-badge">Trípode Pro</span>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- SERVICIOS / PRECIOS -->
+        <section class="servicios-lista">
+            <span class="section-title">Lo que ofrezco</span>
+            <div class="servicios-grid">
+ 
+                <div class="servicio-card">
+                    <span class="servicio-numero">01</span>
+                    <h3 class="servicio-nombre">Fotografía de Retrato</h3>
+                    <p class="servicio-desc">
+                        Sesiones individuales o grupales con enfoque en la expresión y la luz natural. 
+                        Interiores o exteriores según tu preferencia.
+                    </p>
+                    <span class="servicio-precio">Desde $150.000 COP</span>
+                </div>
+ 
+                <div class="servicio-card">
+                    <span class="servicio-numero">02</span>
+                    <h3 class="servicio-nombre">Eventos y Celebraciones</h3>
+                    <p class="servicio-desc">
+                        Cobertura de cumpleaños, grados, reuniones familiares y eventos sociales. 
+                        Entrega de galería digital en alta resolución.
+                    </p>
+                    <span class="servicio-precio">Desde $300.000 COP</span>
+                </div>
+ 
+                <div class="servicio-card">
+                    <span class="servicio-numero">03</span>
+                    <h3 class="servicio-nombre">Fotografía Urbana</h3>
+                    <p class="servicio-desc">
+                        Recorridos por la ciudad capturando arquitectura, cultura y vida cotidiana 
+                        con una mirada documental y artística.
+                    </p>
+                    <span class="servicio-precio">Desde $200.000 COP</span>
+                </div>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
 </body>
 </html>
