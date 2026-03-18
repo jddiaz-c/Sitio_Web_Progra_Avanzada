@@ -1,0 +1,281 @@
+
+/* =============================================
+   SECCIONES DE EQUIPO — fondo bosque desenfocado
+   ============================================= */
+ 
+.equipo {
+    padding: 100px 48px;
+    position: relative;
+    overflow: hidden;
+}
+ 
+/* Imagen de fondo desenfocada */
+.equipo::before {
+    content: '';
+    position: absolute;
+    inset: -30px;
+    background-image: url('../resources/bosque.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    z-index: 0;
+}
+ 
+/* Overlay oscuro encima del fondo para legibilidad */
+.equipo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 12, 20, 0.70);
+    z-index: 1;
+}
+ 
+/* Todo el contenido por encima del overlay */
+.equipo .section-title,
+.equipo .equipo-inner {
+    position: relative;
+    z-index: 2;
+}
+ 
+.equipo .section-title {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+ 
+/* Secciones alternas: overlay un poco más oscuro */
+.equipo-alt::after {
+    background: rgba(8, 12, 20, 0.78);
+}
+ 
+/* =============================================
+   LAYOUT INTERIOR
+   ============================================= */
+ 
+.equipo-inner {
+    max-width: 1100px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+}
+ 
+.equipo-inner-reverse {
+    grid-template-columns: 0.9fr 1.1fr;
+}
+ 
+/* =============================================
+   FOTO CON HOVER ZOOM
+   ============================================= */
+ 
+.equipo-foto-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #0f1624;
+    cursor: pointer;
+}
+ 
+.equipo-foto-wrap img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    opacity: 0.82;
+    display: block;
+    transition: opacity 0.5s ease, transform 0.6s ease;
+}
+ 
+.equipo-foto-wrap:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+ 
+.equipo-foto-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(8, 12, 20, 0.6) 0%,
+        transparent 50%
+    );
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+ 
+.equipo-foto-wrap:hover .equipo-foto-overlay {
+    opacity: 0.3;
+}
+ 
+.equipo-foto-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+ 
+/* =============================================
+   INFO Y ESPECIFICACIONES
+   ============================================= */
+ 
+.equipo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+ 
+.equipo-nombre {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+.equipo-marca {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+ 
+.equipo-modelo {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+ 
+.equipo-linea {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+ 
+.equipo-descripcion {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+ 
+.equipo-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+ 
+.spec-item {
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: background 0.3s ease;
+}
+ 
+.spec-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+ 
+.spec-label {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+ 
+.spec-valor {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.88rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+ 
+
+ 
+.servicios-lista {
+    padding: 100px 48px;
+    position: relative;
+    background: #1a1d24;
+}
+ 
+.servicios-lista .section-title {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+ 
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 60px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.servicio-card {
+    padding: 48px 36px;
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: background 0.3s ease;
+    cursor: default;
+}
+ 
+.servicio-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+ 
+.servicio-numero {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+ 
+.servicio-nombre {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+ 
+.servicio-desc {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+ 
+.servicio-precio {
+    margin-top: auto;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 16px;
+}

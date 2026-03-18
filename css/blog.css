@@ -1,0 +1,291 @@
+/* =============================================
+   HERO BLOG
+   ============================================= */
+ 
+.blog-hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.blog-hero::before {
+    content: '';
+    position: absolute;
+    inset: -30px;
+    background-image: url('../resources/bosque.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: 0;
+}
+ 
+.blog-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 12, 20, 0.68);
+    z-index: 1;
+}
+ 
+.blog-hero-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+ 
+.blog-hero-etiqueta {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+ 
+.blog-hero-titulo {
+    color: white;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+ 
+.blog-hero-subtitulo {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+ 
+/* =============================================
+   SECCIÓN ARTÍCULOS
+   ============================================= */
+ 
+.blog-articulos {
+    padding: 100px 48px;
+    background: #080c14;
+    position: relative;
+}
+ 
+.blog-articulos .section-title {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+ 
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+/* =============================================
+   TARJETA DE ARTÍCULO
+   ============================================= */
+ 
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+ 
+.blog-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+ 
+.blog-card-img {
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-color: #0f1624;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+ 
+.blog-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(8, 12, 20, 0.1) 0%,
+        rgba(8, 12, 20, 0.55) 100%
+    );
+    transition: opacity 0.4s ease;
+}
+ 
+.blog-card:hover .blog-card-img {
+    transform: scale(1.04);
+}
+ 
+.blog-card:hover .blog-card-img::after {
+    opacity: 0.6;
+}
+ 
+.blog-card-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    background: rgba(8, 12, 20, 0.65);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+}
+ 
+.blog-card-body {
+    padding: 28px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+ 
+.blog-card-fecha {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+ 
+.blog-card-titulo {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+ 
+.blog-card-texto {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.8;
+    flex: 1;
+}
+ 
+.blog-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+ 
+.blog-card-tags span {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 2px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+ 
+.blog-card:hover .blog-card-tags span {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.55);
+}
+ 
+/* =============================================
+   SECCIÓN PRECIOS
+   ============================================= */
+ 
+.servicios-lista {
+    padding: 100px 48px;
+    position: relative;
+    background: #1a1d24;
+}
+ 
+.servicios-lista .section-title {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+ 
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 60px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.servicio-card {
+    padding: 48px 36px;
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: background 0.3s ease;
+    cursor: default;
+}
+ 
+.servicio-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+ 
+.servicio-numero {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+ 
+.servicio-nombre {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+ 
+.servicio-desc {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+ 
+.servicio-precio {
+    margin-top: auto;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 16px;
+}
