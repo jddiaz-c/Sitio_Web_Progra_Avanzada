@@ -14,7 +14,7 @@
     content: '';
     position: absolute;
     inset: -30px;
-    background-image: url('../resources/arroyo.jpg');
+    background-image: url('../resources/bosque.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(4px);
@@ -89,7 +89,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(8, 12, 20, 0.70);
+    background: rgba(8, 12, 20, 0.873);
     z-index: 1;
 }
  
@@ -113,7 +113,7 @@
  
 /* Secciones alternas: overlay un poco más oscuro */
 .equipo-alt::after {
-    background: rgba(8, 12, 20, 0.78);
+    background: rgba(8, 12, 20, 0.707);
 }
  
 /* =============================================
