@@ -1,7 +1,5 @@
 
-/* =============================================
-   SECCIONES DE EQUIPO — fondo bosque desenfocado
-   ============================================= */
+
  
 .equipo {
     padding: 100px 48px;
@@ -9,7 +7,7 @@
     overflow: hidden;
 }
  
-/* Imagen de fondo desenfocada */
+/* Imagen de fondo con  desenfoque */
 .equipo::before {
     content: '';
     position: absolute;
@@ -53,9 +51,7 @@
     background: rgba(8, 12, 20, 0.78);
 }
  
-/* =============================================
-   LAYOUT INTERIOR
-   ============================================= */
+
  
 .equipo-inner {
     max-width: 1100px;
@@ -70,9 +66,7 @@
     grid-template-columns: 0.9fr 1.1fr;
 }
  
-/* =============================================
-   FOTO CON HOVER ZOOM
-   ============================================= */
+
  
 .equipo-foto-wrap {
     position: relative;
@@ -124,9 +118,7 @@
     pointer-events: none;
 }
  
-/* =============================================
-   INFO Y ESPECIFICACIONES
-   ============================================= */
+
  
 .equipo-info {
     display: flex;
