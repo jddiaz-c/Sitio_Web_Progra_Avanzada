@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/contacto.css">
     <title>Contacto</title>
 </head>
@@ -21,51 +21,70 @@
         </ul>
         </nav>
     </header>  
+        <section class="hero">
+            <div class="hero-inner">
+                <h1 class="hero-titulo">Contacto</h1>
+            </div> 
+        </section>
 
    <main class="contact-section">
-    <div class="contact-container">
+        <section class="contact-principal">
+            <div class="contact-container">
+                <!-- LADO IZQUIERDO -->
+                <div class="contact-info">
+                    <h1>Contactanos</h1>
+                    <p>
+                        Si tienes alguna pregunta o deseas más información sobre nuestros servicios,
+                        no dudes en comunicarte con nosotros. Estaremos encantados de ayudarte.
+                    </p>
 
-        <!-- LADO IZQUIERDO -->
-        <div class="contact-info">
-            <h1>Contáctanos</h1>
-            <p>
-                Si tienes alguna pregunta o deseas más información sobre nuestros servicios,
-                no dudes en comunicarte con nosotros. Estaremos encantados de ayudarte.
-            </p>
+                    <div class="contact-links">
+                        <p>💻 Contribuye en GitHub</p>
+                        <p>💬 Únete a nuestra comunidad</p>
+                    </div>
 
-            <div class="contact-links">
-                <p>💻 Contribuye en GitHub</p>
-                <p>💬 Únete a nuestra comunidad</p>
-            </div>
-
-            <div class="social-icons">
-                <span>🌐</span>
-                <span>🐦</span>
-                <span>📸</span>
-                <span>💼</span>
-            </div>
-        </div>
-
-        <!-- LADO DERECHO -->
-        <div class="contact-form">
-            <form>
-                <div class="form-row">
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Correo electrónico">
+                    <div class="social-icons">
+                        <span>🌐</span>
+                        <span>🐦</span>
+                        <span>📸</span>
+                        <span>💼</span>
+                    </div>
                 </div>
 
-                <div class="form-row">
-                    <input type="text" placeholder="Teléfono">
-                    <input type="text" placeholder="Asunto">
+                <!-- LADO DERECHO -->
+                <div class="contact-form">
+                    <form>
+                        <div class="form-row">
+                            <input type="text" placeholder="Nombre">
+                            <input type="email" placeholder="Correo electrónico">
+                        </div>
+
+                        <div class="form-row">
+                            <input type="text" placeholder="Teléfono">
+                            <input type="text" placeholder="Asunto">
+                        </div>
+
+                        <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
                 </div>
-
-                <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </div>
-
-    </div>
+            </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">La Galería de Pipe</div>
+        <div class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-copy">© 2024 La Galería de Pipe</p>
+        <p class="footer-location">Tunja, Boyacá</p>
+    </div>
+</footer>
 </body>
 </html>

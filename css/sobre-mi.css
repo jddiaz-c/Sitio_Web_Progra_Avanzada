@@ -1,52 +1,60 @@
-/* HERO SOBRE */
-.hero-sobre {
-    height: 60vh;
-    min-height: 500px;
+/*
+   HERO*/
+ 
+.hero {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -30px;
     background-image: url('../resources/arroyo.jpg');
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: flex-end;
-    padding: 80px 48px;
-    position: relative;
+    filter: blur(4px);
+    z-index: 0;
 }
-
-.hero-sobre::before {
+ 
+.hero::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(8, 12, 20, 0.3) 0%,
-        rgba(8, 12, 20, 0.7) 100%
-    );
-}
-
-.hero-sobre-content {
-    position: relative;
+    background: rgba(8, 12, 20, 0.68);
     z-index: 1;
-    max-width: 800px;
 }
-
+ 
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+ 
 .hero-etiqueta {
-    display: block;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    margin-bottom: 16px;
 }
-
+ 
 .hero-titulo {
     color: white;
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 700;
     letter-spacing: -1px;
     line-height: 1.1;
 }
-
+ 
 /* INTRO */
 .intro {
     padding: 120px 48px;

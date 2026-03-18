@@ -1,9 +1,8 @@
-/* =============================================
-   HERO BLOG
-   ============================================= */
+/*
+   HERO BLOG*/
  
 .blog-hero {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,4 +1,67 @@
-
+/*
+   HERO*/
+ 
+.hero {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -30px;
+    background-image: url('../resources/arroyo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: 0;
+}
+ 
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 12, 20, 0.68);
+    z-index: 1;
+}
+ 
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+ 
+.hero-etiqueta {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+ 
+.hero-titulo {
+    color: white;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+.hero-subtitulo {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+ 
+ 
 /* =============================================
    SECCIONES DE EQUIPO — fondo bosque desenfocado
    ============================================= */
