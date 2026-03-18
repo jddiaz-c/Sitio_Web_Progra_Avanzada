@@ -13,9 +13,10 @@
     content: '';
     position: absolute;
     inset: -30px;
-    background-image: url('../resources/bosque.jpg');
+    background-image: url('../resources/heroCont.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     filter: blur(4px);
     z-index: 0;
 }

@@ -14,7 +14,8 @@
     content: '';
     position: absolute;
     inset: -30px;
-    background-image: url('../resources/bosque.jpg');
+    background-image: url('../resources/heroServi.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     filter: blur(4px);
